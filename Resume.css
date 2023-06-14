@@ -9,6 +9,7 @@
 	--color-tiffany: #00a6a6;
 	--profile-theme: #4682bf;
 	--timeline-circle-theme: #14253e;
+    --color-gold: #ffd700;
 	
 	--pgbar-length: 100%;
 
@@ -20,7 +21,7 @@ html {
 	font-size: 100%;
     font-family: 'PT Sans', sans-serif;
 
-
+    color:gol
 }
 
 * {
@@ -274,6 +275,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
+
 .tool-list > li {
 	position: relative;
 	text-align: center;
@@ -281,6 +283,7 @@ body {
 }
 .tool-list > li > svg {
 	position: relative;
+    text-align: center;
 	fill: transparent;
 	width: 95%;
 	transform: rotate(-90deg);
@@ -288,19 +291,20 @@ body {
 .tool-list > li > svg > circle {
 	stroke-width: 1px;
 	stroke: #cdcdcd;
+
 }
 .tool-list > li > svg > circle.cbar {
 	stroke-width: 3px;
 	stroke: var(--profile-theme);
 	stroke-linecap: round;
-	stroke-dashoffset: 0;
+	stroke-dashoffset: ;
 	stroke-dasharray: calc(var(--MATH-PI) * 45 * 2);
 	transition: all 0.8s;
 	transition-timing-function: cubic-bezier(.64,.51,.16,.86);
 }
 .tool-list > li:hover > svg > circle.cbar {
 	stroke-width: 4px;
-	stroke: var(--color-tiffany);
+	stroke: var(--color-gold);
 	stroke-dashoffset: calc(var(--MATH-PI) * 45 * 2 * (1 - var(--percent)));
 }
 .tool-list > li > .tl-name,
@@ -350,7 +354,7 @@ body {
 }
 .favor-list > li:hover {
 	transform: scale(1.2);
-	color: var(--color-tiffany);
+	color: var(--color-crimson);
 }
 .favor-list > li > span {
 	letter-spacing: 1px;
